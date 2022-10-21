@@ -100,13 +100,13 @@ we want to minimize Log loss which is equivalent to maximizing the probability o
 
 1. **Log Loss**
 
-**Log-loss** is indicative of **how close the prediction probability is to the corresponding actual/true value** (0 or 1 in case of binary classification)
+    **Log-loss** is indicative of **how close the prediction probability is to the corresponding actual/true value** (0 or 1 in case of binary classification)
 
-**Log Loss** is a great choice for a loss function when a higher prediction in the probability of click is very important, as it **penalizes small deviation in probability value**.
+    **Log Loss** is a great choice for a loss function when a higher prediction in the probability of click is very important, as it **penalizes small deviation in probability value**.
 
-1. **AUC**
+2. **AUC**
 
-AUC is a better metric If we are more interested in ranking ads not the probability of clicks.
+    AUC is a better metric If we are more interested in ranking ads not the probability of clicks.
 
 | Model 1 | Ad | True Label | Predicted probability | Rank | AUC = 1 | Log Loss = 0.11 |
 |---------|----|------------|-----------------------|------|---------|-----------------|
