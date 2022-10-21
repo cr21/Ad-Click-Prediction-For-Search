@@ -109,34 +109,18 @@ we want to minimize Log loss which is equivalent to maximizing the probability o
 AUC is a better metric If we are more interested in ranking ads not the probability of clicks.
 
 | Model 1 | Ad | True Label | Predicted probability | Rank | AUC = 1 | Log Loss = 0.11 |
-| --- | --- | --- | --- | --- | --- | --- |
-|
- | A | 1 | 0.99 | 1 |
- |
- |
-|
- | B | 0 | 0.12 | 3 |
- |
- |
-|
- | C | 1 | 0.81 | 2 |
- |
- |
+|---------|----|------------|-----------------------|------|---------|-----------------|
+|         | A  | 1          | 0.99                  | 1    |         |                 |
+|         | B  | 0          | 0.12                  | 3    |         |                 |
+|         | C  | 1          | 0.81                  | 2    |         |                 |
+
 
 | Model 2 | Ad | True Label | Predicted probability | Rank | AUC=1 | Log Loss=0.37 |
-| --- | --- | --- | --- | --- | --- | --- |
-|
- | A | 1 | 0.9 | 1 |
- |
- |
-|
- | B | 0 | 0.4 | 3 |
- |
- |
-|
- | C | 1 | 0.6 | 2 |
- |
- |
+|---------|----|------------|-----------------------|------|-------|---------------|
+|         | A  | 1          | 0.9                   | 1    |       |               |
+|         | B  | 0          | 0.4                   | 3    |       |               |
+|         | C  | 1          | 0.6                   | 2    |       |               |
+
 
 **Both Model 1 and Model 2 have an AUC score of 1,** because Both of these models have the same ranking. AUC does not care about probability, but ranking.
 
